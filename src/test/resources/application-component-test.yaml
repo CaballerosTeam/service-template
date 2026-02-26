@@ -1,0 +1,10 @@
+spring:
+  security:
+    user:
+      name: user
+      password: kapellmeister
+      role: USER
+
+logging:
+  level:
+    org.springframework.security: TRACE

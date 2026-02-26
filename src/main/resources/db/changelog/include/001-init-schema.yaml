@@ -1,0 +1,20 @@
+databaseChangeLog:
+  - changeSet:
+      id: 202602210121
+      author: sergei_iurzin@epam.com
+      changes:
+        - createTable:
+            tableName: auditorium
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+              - column:
+                  name: name
+                  type: varchar(255)
+                  constraints:
+                    nullable: false

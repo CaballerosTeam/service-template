@@ -1,9 +1,9 @@
 plugins {
     id 'groovy'
     id 'jacoco'
-    id 'org.springframework.boot' version '4.0.2'
+    id 'org.springframework.boot' version '4.1.2'
     id 'io.spring.dependency-management' version '1.1.7'
-    id 'org.openapi.generator' version '7.20.0'
+    id 'org.openapi.generator' version '7.27.0'
 }
 
 group = 'com.customer.conference.kapellmeister'
@@ -12,7 +12,7 @@ description = 'Backend solution of a Conference Management System'
 
 java {
     toolchain {
-        languageVersion = JavaLanguageVersion.of(21)
+        languageVersion = JavaLanguageVersion.of(25)
     }
 }
 
@@ -27,13 +27,13 @@ repositories {
 }
 
 ext {
-    openApiVersion = '3.0.1'
+    openApiVersion = '3.2.0'
     mapstructVersion = '1.6.3'
-    postgresVersion = '42.7.10'
-    spockVersion = '2.4-groovy-5.0'
+    postgresVersion = '42.7.14'
+    spockVersion = '2.5-groovy-5.0'
     testcontainerPostgresVersion = '1.21.4'
     testcontainerSpockVersion = '1.21.4'
-    restAssuredVersion = '6.0.0'
+    restAssuredVersion = '6.3.0'
 }
 
 dependencies {
